@@ -62,15 +62,44 @@
         margin: auto;
         margin-top: 5em;
       }
-      main h1 {
+      main h1,
+      .follow-heading {
         color: #6b4e31;
         text-align: center;
       }
-      .about-section {
+      .about-section,
+      .follow-section {
         padding: 20px;
         background: #cbb89c;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .follow-section {
+        display: flex;
+      }
+      .c1,
+      .c2 {
+        flex: 50%;
+        margin-left: 10em;
+      }
+      .follow-buttons {
+        display: flex;
+        justify-content: flex-start;
+        margin: 3px 6px;
+      }
+      .follow-buttons a {
+        margin: 0 5px;
+      }
+      .follow-buttons p {
+        margin: 5px;
+      }
+      .follow-buttons img {
+        width: 30px;
+        height: 30px;
+        transition: transform 0.3s;
+      }
+      .follow-buttons img:hover {
+        transform: scale(1.1);
       }
       footer {
         background: #6b4e31;
@@ -142,12 +171,62 @@
         </p>
         <h2>Who We Are</h2>
         <p>
-          We are a group of educators, researchers, and students passionate
-          about the transformative power of education. Our team works hard to
-          deliver quality content that covers various topics, from basic study
-          skills to the complexities of emerging technologies like quantum
-          computing.
+          We are a group of students passionate about the transformative power
+          of education. Our team works hard to deliver quality content that
+          covers various topics, from basic study skills to the complexities of
+          emerging technologies like quantum computing.
         </p>
+      </section>
+      <br /><br />
+      <h2 class="follow-heading">Our Team Members</h2>
+      <section class="follow-section">
+        <div class="c1">
+          <h3>Laiba Khan</h3>
+          <div class="follow-buttons">
+            <p>Follow on:</p>
+            <a href="https://github.com/LaibaKhan118" target="_blank">
+              <img src="../images/github.svg" alt="Follow on Github" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/laiba-khan-22a22b25b/"
+              target="_blank"
+            >
+              <img src="../images/linkedin.svg" alt="Follow on Linkedin" />
+            </a>
+          </div>
+          <h3>Zunairah Aziz Sheikh</h3>
+          <div class="follow-buttons">
+            <p>Follow on:</p>
+            <a href="" target="_blank">
+              <img src="../images/github.svg" alt="Follow on Github" />
+            </a>
+            <a href="" target="_blank">
+              <img src="../images/linkedin.svg" alt="Follow on Linkedin" />
+            </a>
+          </div>
+        </div>
+        <div class="c2">
+          <h3>Abeeha Binte Aamer</h3>
+          <div class="follow-buttons">
+            <p>Follow on:</p>
+            <a href="" target="_blank">
+              <img src="../images/github.svg" alt="Follow on Github" />
+            </a>
+            <a href="" target="_blank">
+              <img src="../images/linkedin.svg" alt="Follow on Linkedin" />
+            </a>
+          </div>
+          <h3>Aamna Rizwan</h3>
+          <div class="follow-buttons">
+            <p>Follow on:</p>
+            <a href="" target="_blank">
+              <img src="../images/github.svg" alt="Follow on Github" />
+            </a>
+            <a href="" target="_blank">
+              <img src="../images/linkedin.svg" alt="Follow on Linkedin" />
+            </a>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
