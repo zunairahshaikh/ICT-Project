@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Study Sphere</title>
+    <style>
+      body {
+        font-family: Georgia, serif;
+        background: #f5e9da;
+        margin: 0;
+        padding: 0;
+        color: #3d2b1f;
+      }
+      header {
+        width: 98%;
+        height: 50px;
+        background: #6b4e31;
+        color: #f5e9da;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        z-index: 1030;
+      }
+      .logo {
+        padding-left: 40px;
+      }
+      .logo img {
+        height: 70px;
+        width: 350px;
+      }
+      nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 40px;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: #f5e9da;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      .sections {
+        padding: 20px;
+        max-width: 90%;
+        margin: auto;
+      }
+      .intro {
+        width: 100%;
+        height: 100vh;
+        background-image: url('images/hero1.png');
+      }
+      .intro-text {
+        color: #fff;
+        padding-top: 17%;
+        padding-left: 3em;
+      }
+      .intro-text h1 {
+        font-size: 3.5em;
+      }
+      .intro-text p {
+        font-size: 1.8em;
+      }
+      .latest-posts,
+      .news-articles {
+        margin: 20px 0;
+      }
+      .latest-posts img,
+      .news-articles img {
+        width: 100%;
+        height: 40%;
+        border-radius: 8px;
+      }
+      .latest-posts-heading,
+      .news-articles-heading {
+        color: #6b4e31;
+        text-align: center;
+        font-size: 32px;
+        text-decoration: underline;
+      }
+      .latest-posts ul,
+      .news-articles ul {
+        height: fit-content;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 2.5em;
+        flex-grow: 1;
+      }
+      .latest-posts li,
+      .news-articles li {
+        width: 33%;
+        padding: 15px;
+        border: 1px solid #ffffff81;
+        background-color: #ffffff6b;
+        border-radius: 8px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        list-style: none;
+        text-decoration: none;
+        color: #442b13;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .latest-posts li h3,
+      .news-articles li h3 {
+        font-size: 24px;
+      }
+      .latest-posts li:hover,
+      .news-articles li:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .more {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+      }
+      .more button {
+        width: 15em;
+        font-size: 20px;
+        padding: 20px;
+      }
+      button {
+        background: #6b4e31;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      button:hover {
+        background: #cbb89c;
+        color: #6b4e31;
+      }
+      footer {
+        background: #6b4e31;
+        color: #f5e9da;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+      footer .newsletter-form {
+        width: 50%;
+        min-width: 200px;
+        margin: auto;
+        text-align: center;
+      }
+      .newsletter-form h3 {
+        margin-bottom: 10px;
+      }
+      .newsletter-form input[type='email'] {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: calc(100% - 250px);
+      }
+      .newsletter-form button {
+        background: #b06634;
+        width: calc(100% - 230px);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background 0.3s;
+      }
+      .newsletter-form button:hover {
+        background: #6b4e31;
+        border: solid 1px #fff;
+      }
+      .copyright {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="images/logo.svg" /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="post.html">Blog Posts</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro-text">
+          <h1>Welcome To Study Sphere</h1>
+          <p>
+            This blog covers topics related to education and learning tips,
+            helping students improve their knowledge and skills.
+          </p>
+        </div>
+      </section>
+      <div class="sections">
+        <h2 class="latest-posts-heading">Latest Posts</h2>
+        <section class="latest-posts">
+          <ul>
+            <li>
+              <img src="images/study-habits.png" alt="Improving Study Habits" />
+              <h3>Improving Study Habits</h3>
+              <p>
+                Studying effectively is a skill that takes time and effort to master, but it’s one of the most important habits
+                you can develop to achieve academic success. Whether you’re preparing for exams, completing assignments...
+            
+              </p>
+              <a href="posts/improving-study.html"
+                ><button>View More</button></a
+              >
+            </li>
+            <li>
+              <img
+                src="images/education-tools.png"
+                alt="Educational Tools Cover Photo"
+              />
+              <h3>Top Educational Tools</h3>
+              <p>
+                 In today's digital age, technology has revolutionized the way we learn and access educational 
+                resources. With countless tools available, it can be overwhelming to know where to start...
+                 
+              </p>
+              <a href="post.html"><button>View More</button></a>
+            </li>
+            <li>
+              <img
+                src="images/quantum-computing.jpg"
+                alt="Quantum Computing Cover Photo"
+              />
+              <h3>Quantum Computing Basics</h3>
+              <p>
+                Quantum computing is a revolutionary field of computing that leverages the principles of quantum mechanics
+               to solve problems that are intractable for classical computers....
+              </p>
+              <a href="post.html"><button>View More</button></a>
+            </li>
+          </ul>
+        </section>
+        <h2 class="news-articles-heading">Latest News Articles</h2>
+        <section class="news-articles">
+          <ul>
+            <li>
+              <img
+                src="images/Ai-for-edu.jpg"
+                alt="AI for Education Cover Photo"
+              />
+              <h3>New Advances in AI for Education</h3>
+              <p>
+                Artificial Intelligence (AI) is revolutionizing education,
+                offering innovative solutions to enhance learning experiences
+                and streamline teaching processes....
+              </p>
+              <a href="posts/new-advances-in-ai-for-edu.html"
+                ><button>View More</button></a
+              >
+            </li>
+            <li>
+              <img
+                src="images/remote-learning.jpg"
+                alt="Remote Learning Cover Photo"
+              />
+              <h3>Top 10 Tips for Remote Learning</h3>
+              <p>
+                Remote learning has become a crucial part of education, offering
+                flexibility and convenience. However, staying productive and
+                engaged can be challenging without the traditional classroom
+                environment....
+              </p>
+              <a href="posts/study-tips.html"><button>View More</button></a>
+            </li>
+            <li>
+              <img
+                src="images/Tech-in-class.png"
+                alt="Technology in Classrooms Cover Photo"
+              />
+              <h3>How Technology is Changing Classrooms</h3>
+              <p>
+                Technology has dramatically reshaped the educational landscape,
+                transforming traditional classrooms into dynamic, interactive,
+                and engaging learning environments....
+              </p>
+              <a href="posts/tech-in-class.html"><button>View More</button></a>
+            </li>
+          </ul>
+        </section>
+        <div class="more">
+          <a href="post.html"><button>View More</button></a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="newsletter-form">
+        <h3>Subscribe to our Newsletter</h3>
+        <form action="#" method="post">
+          <input type="email" placeholder="Enter your email" required />
+          <br /><br />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Study Sphere. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
